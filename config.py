@@ -9,5 +9,6 @@ class Config(object):
     TWITTER_CONSUMER_SECRET = os.environ.get('TWITTER_CONSUMER_SECRET')
     TWITTER_ACCESS_TOKEN = os.environ.get('TWITTER_ACCESS_TOKEN')
     TWITTER_ACCESS_TOKEN_SECRET = os.environ.get('TWITTER_ACCESS_TOKEN_SECRET')
-    POSITIVE_GPIO = os.environ.get('POSITIVE_GPIO') or 17
-    NEGATIVE_GPIO = os.environ.get('NEGATIVE_GPIO') or 27
+    POSITIVE_GPIO = os.environ.get('POSITIVE_GPIO') or 22
+    NEGATIVE_GPIO = os.environ.get('NEUTRAL_GPIO') or 27
+    NEUTRAL_GPIO = os.environ.get('NEGATIVE_GPIO') or 17
