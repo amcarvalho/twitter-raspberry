@@ -1,18 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <br/>
-    <form class_="login100-form" action="" method="post" novalidate>
-        <span class="login100-form-title">
-            Twitter Sentiment Analysis on Raspberry
-        </span>
-        <div class="wrap-input100">
-            {{ form.hidden_tag() }}
-            {{ form.search_term(size=32, class_="input100", placeholder="Search Term" ) }}
-            <span class="focus-input100"></span>
-            <div class="container-login100-form-btn">
-                <p>{{ form.submit(class_="login100-form-btn") }}</p>
-            </div>
-        </div>
+    <form class_="form-style-7" action="" method="post">
+        {{ form.hidden_tag() }}
+        <ul>
+            <li>
+                <label for="search_term"></label>
+                {{ form.search_term(size=100) }}
+                <span>Enter you full Search Term here. Uses same syntax as search.twitter.com</span>
+            </li>
+            <li>
+                {{ form.submit() }}
+            </li>
+        </ul>
     </form>
 {% endblock %}
