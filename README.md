@@ -1,5 +1,5 @@
 # Twitter on Raspberry
-Streams in real-time Twitter search queries and uses AWS Comprehend to do
+Streams real-time Twitter search queries and uses AWS Comprehend to do
 sentiment analysis. Depending on the sentiment detected (positive, neutral
 or negative), blinks a green, yellow or red LED.
 
@@ -26,7 +26,7 @@ export TWITTER_ACCESS_TOKEN_SECRET=my_twitter_access_token_secret
 You can create a Twitter App and generate API keys/secrets
 [here](https://developer.twitter.com/en/apps/).
 
-Provide AWS credentials of a IAM user allowed to make AWS Comprehend API calls.
+Provide AWS credentials of an IAM user allowed to make AWS Comprehend API calls.
 
 ### Starting Services
 Next you will need to run 3 separate shells (or detach each process).
@@ -46,7 +46,7 @@ celery worker -A app.celery --loglevel=info
 ```
 
 #### Flask
-Start the Flash application:
+Start the Flask application:
 ```
 FLASK_APP=twitter-raspberry.py & flask run --host 0.0.0.0
 ```
