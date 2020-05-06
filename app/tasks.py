@@ -41,10 +41,11 @@ class Listener(StreamListener):
                 response = comprehend.detect_sentiment(Text=text, LanguageCode=language_code)
                 if response['Sentiment'] == 'NEGATIVE':
                     raspberry.blink_once(app.config['NEGATIVE_GPIO'])
-                    self.num_tweets += 1
                 elif response['Sentiment'] == 'POSITIVE':
                     raspberry.blink_once(app.config['POSITIVE_GPIO'])
-                    self.num_tweets += 1
+                else:
+                    raspberry.blink_once(app.config['NEUTRAL_GPIO'])
+                self.num_tweets += 1
         else:
             return True
 
