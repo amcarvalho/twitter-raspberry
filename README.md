@@ -22,6 +22,10 @@ export TWITTER_CONSUMER_KEY=my_twitter_consumer_key
 export TWITTER_CONSUMER_SECRET=my_twitter_consumer_secret
 export TWITTER_ACCESS_TOKEN=my_twitter_access_token
 export TWITTER_ACCESS_TOKEN_SECRET=my_twitter_access_token_secret
+
+export AWS_ACCESS_KEY_ID=aws_access_key_id
+export AWS_SECRET_ACCESS_KEY=aws_secret_access_key
+export AWS_DEFAULT_REGION=your_preferred_aws_region
 ```
 You can create a Twitter App and generate API keys/secrets
 [here](https://developer.twitter.com/en/apps/).
