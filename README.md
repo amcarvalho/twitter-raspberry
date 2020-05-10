@@ -4,6 +4,8 @@ sentiment analysis. Depending on the sentiment detected (positive, neutral
 or negative), blinks a green, yellow or red LED.
 
 ## Video
+Check this video on Youtube showing how it works.
+[![Twitter Sentiment Analysis on Raspberry Pi](https://img.youtube.com/vi/gDkni4cXA0s/0.jpg)](https://youtu.be/gDkni4cXA0s) 
 
 ## Instructions
 Clone this repo in your RaspberryPi:
