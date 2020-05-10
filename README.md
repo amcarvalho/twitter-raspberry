@@ -9,6 +9,17 @@ Check this video on Youtube showing how it works.
 [![Twitter Sentiment Analysis on Raspberry Pi](https://img.youtube.com/vi/gDkni4cXA0s/0.jpg)](https://youtu.be/gDkni4cXA0s) 
 
 ## Instructions
+
+### Circuitry
+You should connect 3 LEDs with 330ohm resistors:
+* Red LED: connect to GPIO 17;
+* Yellow LED: connect to GPIO 27;
+* Red LED: connect to GPIO 22;
+
+![Submit Form](app/static/images/circuit.jpg)
+
+### Software
+
 Clone this repo in your RaspberryPi:
 ```
 git clone http://github.com/amcarvalho/twitter-raspberry
