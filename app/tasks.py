@@ -6,7 +6,7 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 from tweepy.streaming import StreamListener
 
-comprehend = boto3.client(service_name='comprehend', region_name='eu-west-2')
+comprehend = boto3.client(service_name='comprehend')
 
 
 class Listener(StreamListener):
