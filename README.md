@@ -14,7 +14,7 @@ Check this video on Youtube showing how it works.
 You should connect 3 LEDs with 330ohm resistors:
 * Red LED: connect to GPIO 17;
 * Yellow LED: connect to GPIO 27;
-* Red LED: connect to GPIO 22;
+* Green LED: connect to GPIO 22;
 
 ![Circuit](app/static/images/circuit.jpg)
 
